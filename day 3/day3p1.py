@@ -1,7 +1,3 @@
-RIGHT_MOVE = 3
-DOWN_MOVE = 1
-
-
 def tree_check(tree_map, right_move, down_move):
     tree_count = 0
     row = 0
@@ -24,11 +20,4 @@ if __name__ == '__main__':
         for line in file:
             tree_map.append(line)
 
-    product = 1
-    product *= tree_check(tree_map, 1, 1)
-    product *= tree_check(tree_map, 3, 1)
-    product *= tree_check(tree_map, 5, 1)
-    product *= tree_check(tree_map, 7, 1)
-    product *= tree_check(tree_map, 1, 2)
-
-    print(product)
+    print(tree_check(tree_map, 3, 1))
